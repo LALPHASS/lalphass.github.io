@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diarra Hamadoun -- Data Analyst </title>
+    <link rel="stylesheet" href="sytles.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <style>
+        #myBtn {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 10px;
+          z-index: 1;
+          font-size: 18px;
+          border: none;
+          outline: none;
+          background-color: #033a80;
+          color: white;
+          cursor: pointer;
+          padding: 10px;
+          border-radius: 100px;
+        }
+
+        #myBtn:hover {
+          background-color: hsl(213, 50%, 33%);
+          
+        }
+        
+        </style>
+
+</head>
+
+<body>
+<!-- Navbar  Section Start -->
+<header>
+    <a href="index.html" class="logo">H<span>D</span></a>
+
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+    </ul>
+
+</header>
+<!-- Navbar Section End -->
+<!-- Home Section Start -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bx bx-chevrons-up'></i></button>
+
+<section class="home2">
+   <div class="heading">
+      <h2 data-aos="zoom-in" style=" display: inline-flex; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* keep the background color wrapped tight */background-color:#003566;padding:7px;color:#ffffff;">Chicago Crime</h2>
+      
+  </div>
+  <div class="about-container2">
+    
+   
+  
+  <div class="about-text">
+        <p data-aos="fade-up" style="font-size:1.25rem;">
+          Given that chicago is one of the deadliest cities in the USA, I wanted to understand the criminal environment in chicago over the last 20 years.
+The data used for this analysis is available on google cloud and can be queried using BigQuery. <br>
+
+For this analysis I queried the data using <a href="https://drive.google.com/file/d/18P_Hmchy45cgvrew8QAmlRGX0NMOc4BM/view?usp=sharing" target="_blank">SQL</a> on BigQuery, and downloaded the data as a csv file. Visuals were made on EXCEL. <br> <br>
+
+<strong>Questions :</strong>
+<br>
+1. How has Chicago's criminal environment changed over the years? <br>
+2. Are there any types of crime that follow a particular trend over the years?<br>
+3. Is there a particular distribution of crime over the months of the year?<br>
+ 4. Is there one or more locations that stand out from the rest in terms of crime rates?<br>
+ <br>
+ <strong>Hypothesis :</strong>
+<br>
+1. Chicago's crime environment could experience a steady rise or fall in crime over the years.<br>
+2. Certain types of crime may follow a trend over time.<br>
+3. Maybe<br>
+4. Yes <br> <br>
+</p>
+</div>
+<div class="data_ana">
+  <p style=font-size:1.25rem >
+    <strong>Data Analysis :</strong> <br>
+    This section contains the visuals produced during data analysis.
+    <br> <br>
+  </p>
+</div>
+
+<div class="about-container">
+        
+  <div data-aos="fade-right">    
+          <img src="cce.png" alt="#" class="hama__img_11">
+  </div>
+
+  <div class="about-text">
+      <p data-aos="fade-up" style="font-size:1.25rem;">This graph shows that Chicago's crime environment is on the decline between 2001 and 2023.<br> <br>  
+      </p>
+      <p data-aos="fade-right" style="font-size:1.25rem;">
+        From 2001 to 2023, the crime rate dropped by more than 74%. <br><br>  
+      </p>
+  </div>
+</div>
+<div class="about-container">
+        
+  <div data-aos="fade-right">    
+          <img src="tc.png" alt="#" class="hama__img_11">
+  </div>
+
+  <div class="about-text">
+      <p data-aos="fade-up" style="font-size:1.25rem;">This graph shows the top 10 types of crime in Chicago and how they have changed over the years. <br> <br>  
+         
+      </p>
+      <p data-aos="fade-right" style="font-size:1.25rem;">
+        Consistent with the overall crime graph, this chart also shows a downward trend for most crime types, in particular narcotics type.  <br><br>  
+      </p>
+  </div>
+</div>
+
+<div class="about-container">
+        
+  <div data-aos="fade-right">    
+          <img src="pcc.png" alt="#" class="hama__img_11">
+  </div>
+
+  <div class="about-text">
+      <p data-aos="fade-up" style="font-size:1.25rem;">
+        The chart shows that the top ten crime types in Chicago account for 92% of all crimes committed in Chicago.<br> <br>    
+      </p>
+      <p data-aos="fade-right" style="font-size:1.25rem;">
+        The remaining 8% represents the other 26 crime types. <br> <br>  
+      </p>
+  </div>
+</div>
+
+<div class="about-container">
+        
+  <div data-aos="fade-right">    
+          <img src="mcc.png" alt="#" class="hama__img_11">
+  </div>
+
+  <div class="about-text">
+      <p data-aos="fade-up" style="font-size:1.25rem;">
+        This graph shows that the monthly distribution of crime in Chicago follows no particular pattern. <br> <br>    
+      </p>
+      <p data-aos="fade-right" style="font-size:1.25rem;">
+        There is no huge difference between the months. <br> <br>  
+      </p>
+  </div>
+</div>
+
+<div class="about-container">
+        
+  <div data-aos="fade-right">    
+          <img src="loc.png" alt="#" class="hama__img_11">
+  </div>
+
+  <div class="about-text">
+      <p data-aos="fade-up" style="font-size:1.25rem;">
+        Street, Residence, Apartment and Sidewalk are the four main places where most crime occurs in Chicago.
+        <br> <br>    
+      </p>
+
+  </div>
+  
+</div>
+
+       
+
+  </div>
+  <div class="fr">
+    <a href="https://docs.google.com/presentation/d/1LLTgf9IKkU4XaKZece3MoHsJ_BtmQqVs/edit?usp=sharing&ouid=102771306309765929427&rtpof=true&sd=true" class="btn" data-aos="fade-right" style="font-size:1.5rem;" style = "font-family:'Times New Roman', Times, serif;" target="_blank">Final Result</a>
+  </div>
+</section>
+
+
+<!-- Contact Section Start -->
+
+<hr style="height:2px;border-width:0;color:#033a80;background-color:#033a80">
+<hr class="hr__fifty" style="height:2px;border-width:0;color:#033a80;background-color:#033a80"/>
+
+                            <!-- Contact Section End -->
+                         <div class="footer">
+                                
+
+                            </div>
+
+                            <div class="copyright">
+                                © Diarra | All Right Reserved.</p>
+                            </div>
+                            <!-- Javascript -->
+                            <script src="script.js"></script>
+
+                            <script>
+                                // Get the button
+                                let mybutton = document.getElementById("myBtn");
+                                
+                                // When the user scrolls down 20px from the top of the document, show the button
+                                window.onscroll = function() {scrollFunction()};
+                                
+                                function scrollFunction() {
+                                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                                    mybutton.style.display = "block";
+                                  } else {
+                                    mybutton.style.display = "none";
+                                  }
+                                }
+                                
+                                // When the user clicks on the button, scroll to the top of the document
+                                function topFunction() {
+                                  document.body.scrollTop = 0;
+                                  document.documentElement.scrollTop = 0;
+                                }
+                                </script>
+
+                                <!-- aos js link  -->
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+                                <script>
+
+                                AOS.init({
+                                    duration:800,
+                                    delay:300
+                                });
+
+                                </script>
+
+</body>
+
+</html>
